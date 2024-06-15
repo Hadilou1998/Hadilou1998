@@ -28,3 +28,8 @@ const conn = mysql.createConnection({
     database: ""
 });
 
+// Ouvrir la connection à mysql
+conn.connect(error => {
+    if (error) throw error;
+    console.log("Successfully connected to the database.");
+});
