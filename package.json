@@ -1,0 +1,11 @@
+{
+  "name": "restosducoeur_api_mern",
+  "version": "1.0.0",
+  "description": "<!-- **Hadilou1998/Hadilou1998** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
