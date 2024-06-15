@@ -1,17 +1,13 @@
 ## Hi there 👋
 
-<!--
-**Hadilou1998/Hadilou1998** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Créer une API React MERN pour une association :
+	
+	- Créer une base de données sur Mysql
+	- Back-End : Développement de l'API en NodeJS 
+	- Front-End : Utilisation du ReactJS
+	- Utilisation de Docker et Kubernetes
 
-J'ai beaucoup d'idée pour commencer mon projet:
+## 1ère étape : MCD
 
-- Création de la base de données d'une association 👍
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
+	- Une association reçoit des dons de donateurs privés.
+	- Objectif : envoyer des reçus fiscaux contenant la date du don, le montant et le nom du donateur.
