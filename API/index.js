@@ -13,10 +13,13 @@ const app = express();
 
 // Activation de CORS
 app.use(cors());
+
 // Activation de Morgan
 app.use(morgan('tiny'));
+
 // parse application/json
 app.use(bodyParser.json());
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
