@@ -28,7 +28,7 @@ const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "hadil",
-    database: ""
+    database: "Restosducoeur_API"
 });
 
 // Ouvrir la connection à mysql
