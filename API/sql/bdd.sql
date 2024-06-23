@@ -21,3 +21,5 @@ CREATE TABLE IF NOT EXISTS Association (
     email VARCHAR(50) NOT NULL,
     activity_area VARCHAR(25) NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS 
