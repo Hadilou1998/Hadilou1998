@@ -63,4 +63,4 @@ CREATE TABLE IF NOT EXISTS Reçu (
 --  ------------------------
 
 INSERT INTO Association VALUES
-(NULL, 'Les Restos du Coeur', '1985-09-26', '42 rue de Clichy', '75009', 'Paris', '33(0)153322323', 'contact@restosducoeur.org', 'l'\'aide alimentaire');
+(NULL, 'Les Restos du Coeur', '1985-09-26', '42 rue de Clichy', '75009', 'Paris', '33(0)153322323', 'contact@restosducoeur.org', 'l\'aide alimentaire');
