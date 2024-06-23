@@ -19,7 +19,45 @@ CREATE TABLE IF NOT EXISTS Association (
     address VARCHAR(50) NOT NULL,
     phone CHAR(10) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    activity_area VARCHAR(25) NOT NULL
+    activity_area VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS 
+CREATE TABLE IF NOT EXISTS Donateur (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    lastname_dona VARCHAR(25) NOT NULL,
+    firstname_dona VARCHAR(25) NOT NULL,
+    email VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Members (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    lastname_mem VARCHAR(25) NOT NULL,
+    fisrtname_mem VARCHAR(25) NOT NULL,
+    role ENUM('admin', 'user') NOT NULL,
+    mail VARCHAR(50) NOT NULL,
+    number VARCHAR(25) NOT NULL,
+    id_ass INT
+);
+
+CREATE TABLE IF NOT EXISTS Don (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    date_don DATE NOT NULL,
+    type VARCHAR(25) NOT NULL,
+    rising FLOAT UNSIGNED NOT NULL,
+    remark VARCHAR(255) NOT NULL,
+    id_ass INT,
+    id_dona INT
+);
+
+CREATE TABLE IF NOT EXISTS Reçu (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    date_received DATE NOT NULL,
+    id_ass INT,
+    id_dona INT
+);
+
+CREATE TABLE IF NOT EXISTS Faire_Partie (
+    id_mem INT,
+    id_ass INT
+);
+
