@@ -67,8 +67,4 @@ INSERT INTO Association VALUES
 
 INSERT INTO Donateur VALUES
 (NULL, 'BALDECK', 'Neil', 'neil.baldeck@gmail.com'),
-(NULL, 'BAH', 'Ibrahima', 'neil.baldeck@gmail.com'),
-(NULL, 'BALDECK', 'Neil', 'neil.baldeck@gmail.com'),
-(NULL, 'BALDECK', 'Neil', 'neil.baldeck@gmail.com'),
-(NULL, 'BALDECK', 'Neil', 'neil.baldeck@gmail.com'),
-(NULL, 'BALDECK', 'Neil', 'neil.baldeck@gmail.com'),
+(NULL, 'BAH', 'Ibrahima', 'bra.ibrahima.pro@hotmail.com');
