@@ -17,3 +17,5 @@
 	- Donner un nom à la BDD
 	- Ajouter des tables et des relations
 	- Faire des tests de requêtes
+
+## 3ème étape : Project Back-End
