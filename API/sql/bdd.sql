@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS Donateur (
 CREATE TABLE IF NOT EXISTS Members (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     lastname_mem VARCHAR(25) NOT NULL,
-    fisrtname_mem VARCHAR(25) NOT NULL,
+    firstname_mem VARCHAR(25) NOT NULL,
     role ENUM('admin', 'user') NOT NULL,
     mail VARCHAR(50) NOT NULL,
     number VARCHAR(25) NOT NULL,
@@ -67,4 +67,11 @@ INSERT INTO Association VALUES
 
 INSERT INTO Donateur VALUES
 (NULL, 'BALDECK', 'Neil', 'neil.baldeck@gmail.com'),
-(NULL, 'BAH', 'Ibrahima', 'bra.ibrahima.pro@hotmail.com');
+(NULL, 'BAH', 'Ibrahima', 'bra.ibrahima.pro@hotmail.com'),
+(NULL, 'DOLMA', 'Migma', 'mdolma@ymail.com'),
+(NULL, 'BEUVE', 'Mattéo', 'm_beuve@outlook.com'),
+(NULL, 'RYU', 'Léa', 'leacielbleu@yahoo.com'),
+(NULL, 'COULIBALY', 'Mahmoud', 'doncoulybak@gmail.com');
+
+INSERT INTO Members VALUES
+(NULL, 'GOLDMAN', 'Jean-Jacques', 'admin');
