@@ -74,4 +74,7 @@ INSERT INTO Donateur VALUES
 (NULL, 'COULIBALY', 'Mahmoud', 'doncoulybak@gmail.com');
 
 INSERT INTO Members VALUES
-(NULL, 'GOLDMAN', 'Jean-Jacques', 'admin');
+(NULL, 'GOLDMAN', 'Jean-Jacques', 'admin'),
+(NULL, 'BALAVOINE', 'Daniel', 'admin'),
+(NULL, 'ROBIN', 'Muriel', 'admin'),
+(NULL, 'MATHY', 'Mimmy', 'admin');
