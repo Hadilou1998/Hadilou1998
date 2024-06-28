@@ -75,5 +75,14 @@ INSERT INTO Donateur VALUES
 
 INSERT INTO Members VALUES
 (NULL, 'GOLDMAN', 'Jean-Jacques', 'admin', 'jj.goldman@gmail.com', '33(0)155074500'),
-(NULL, 'ROBIN', 'Muriel', 'admin', 'muriel.robin@gmail.com', ''),
-(NULL, 'MATHY', 'Mimmy', 'admin', 'mimmy.mathy@gmail.com', '');
+(NULL, 'ROBIN', 'Muriel', 'admin', 'muriel.robin@gmail.com', '33(0)142122626'),
+(NULL, 'MATHY', 'Mimie', 'admin', 'mimmy.mathy@gmail.com', '33(0)238247281'),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', ''),
+(NULL, '', '', '', '', '');
