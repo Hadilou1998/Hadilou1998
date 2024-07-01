@@ -6,7 +6,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
 const PORT = 8080;
-const accessToken = "MyKey";
+const mysecret = "MyKey";
 
 // Démarrer Express
 const app = express();
@@ -36,3 +36,47 @@ conn.connect(error => {
     if (error) throw error;
     console.log("Successfully connected to the database.");
 });
+
+// Récupération du header bearer
+const extractBearerToken = headerValue =>
+{
+    if (typeof headerValue !== "string") 
+    {
+        return false;
+    }
+
+    const matches = headerValue.match(/(bearer)\s+(\S+)/i);
+    return matches && matches[2];
+}
+
+// Vérification du token user
+const checkTokenMiddleware = (req, res, next) =>
+{
+    // Récupération du token
+    const accessToken = req.headers.authorization && extractBearerToken(req.headers.authorization);
+
+    // Présence du token
+    if (!accessToken) 
+    {
+        return res.status(401).json
+        ({
+            message: "Error. Need a token"
+        });    
+    }
+
+    // Véracité du token
+    jsonwebtoken.verify(accessToken, mysecret, (err, decoded) =>
+    {
+        if (err) 
+        {
+            return res.status(401).json
+            ({
+                message: "Invalid Token..."
+            });
+        }
+        else
+        {
+            return next();
+        }
+    })
+}
